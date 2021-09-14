@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: gray;
+  font-family: 'Rubik', sans-serif;
+}
+
+.blue_bg {
+  width: 100%;
+  height: 35%;
+  background: url("../images/pattern-bg.png") no-repeat 100%/cover;
+  position: relative;
+  padding: 40px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blue_bg .main-heading {
+  font-size: 2.5em;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.blue_bg .details {
+  width: 70%;
+  height: 180px;
+  padding: 30px;
+  border-radius: 20px;
+  background: #fff;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: -100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 100;
+}
+
+.blue_bg .details .detail {
+  width: 24%;
+  padding: 0 15px;
+  position: relative;
+}
+
+.blue_bg .details .detail .detail_heading {
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #969696;
+  letter-spacing: 1px;
+}
+
+.blue_bg .details .detail .detail_info {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin-top: 15px;
+}
+
+.blue_bg .details .detail:not(:last-child)::after {
+  content: "";
+  width: 1.5px;
+  height: 75%;
+  background: #969696;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: .7;
+}
+
+.blue_bg .seach_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blue_bg .seach_form .search_ip {
+  width: 600px;
+  padding: 15px 30px;
+  background: #fff;
+  border: 1px solid #2b2b2b;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-size: 1rem;
+}
+
+.blue_bg .seach_form .search_ip:focus {
+  outline: none;
+}
+
+.blue_bg .seach_form .seach_btn {
+  width: 50px;
+  height: 50px;
+  background: #2b2b2b;
+  border: 1px solid #2b2b2b;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+}
+
+.map {
+  width: 100%;
+  height: calc(100% - 35%);
+  background: cyan;
+  position: relative;
+}
+
+.map .map_area {
+  width: 100%;
+  height: 100%;
+  background: brown;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+}
+
+.map .attribution {
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  font-size: 18px;
+  text-align: center;
+  color: #2b2b2b;
+  padding: 15px;
+}
+
+@media (min-width: 319px) and (max-width: 480px) {
+  .blue_bg {
+    width: 100%;
+    height: 25%;
+    padding: 20px 10px;
+  }
+  .blue_bg .main-heading {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  .blue_bg .seach_form {
+    width: 95%;
+  }
+  .blue_bg .seach_form .search_ip {
+    width: 80%;
+  }
+  .blue_bg .details {
+    width: 70%;
+    height: 340px;
+    padding: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .blue_bg .details .detail {
+    width: 100%;
+  }
+  .blue_bg .details .detail .detail_info {
+    margin-top: 5px;
+  }
+  .blue_bg .details .detail:not(:last-child)::after {
+    display: none;
+  }
+  .map {
+    width: 100%;
+    height: calc(100% - 25%);
+  }
+  .map .attribution {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .blue_bg {
+    width: 100%;
+    height: 25%;
+    padding: 20px 10px;
+  }
+  .blue_bg .main-heading {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  .blue_bg .seach_form {
+    width: 95%;
+  }
+  .blue_bg .seach_form .search_ip {
+    width: 80%;
+  }
+  .blue_bg .details {
+    width: 70%;
+    height: 300px;
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .blue_bg .details .detail {
+    width: 100%;
+  }
+  .blue_bg .details .detail .detail_info {
+    margin-top: 5px;
+  }
+  .blue_bg .details .detail:not(:last-child)::after {
+    display: none;
+  }
+  .map {
+    width: 100%;
+    height: calc(100% - 25%);
+  }
+}
+/*# sourceMappingURL=style.css.map */

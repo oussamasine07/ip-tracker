@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="blue_bg">
+    <h1 class="main-heading">IP Address Tracker</h1>
+    <div class="seach_form">
+      <input type="text" class="search_ip" id="search_input" placeholder="Search for any IP address or domain">
+      <button class="seach_btn" id="search">
+        <img src="./images/icon-arrow.svg" alt="" class="icon-arrow">
+      </button>
+    </div>
+    <div class="details">
+      <div class="detail">
+        <h3 class="detail_heading">IP Address</h3>
+        <p class="detail_info" id="ip"></p>
+      </div>
+      <div class="detail">
+        <h3 class="detail_heading">Location</h3>
+        <p class="detail_info" id="adress"></p>
+      </div>
+      <div class="detail">
+        <h3 class="detail_heading">Timezone</h3>
+        <p class="detail_info" id="timezone"></p>
+      </div>
+      <div class="detail">
+        <h3 class="detail_heading">ISP</h3>
+        <p class="detail_info" id="isp"></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="map">
+    <div class="map_area" id="mapid">
+
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Sine Oussama</a>.
+    </div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+   <script src="./js/script.js"></script>
+</body>
+</html>
